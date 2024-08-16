@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1HL817Z2B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-E1HL817Z2B');
+    </script>
+
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:4950426,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4087761493614697"
+     crossorigin="anonymous"></script>
+
+    
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Create and Play Custom Strands Games | Custom Strands">
+    <meta name="description" content="Join the Custom Strands community to create, play, and share your own NYT-style strands games. Challenge friends, explore new puzzles, and track your completions.">
+    <meta name="keywords" content="custom strands, NYT-style puzzles, strands games, word games, puzzle creation, play strands, custom puzzles">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en-US">
+    
+    <link rel="shortcut icon" type="image/png" href="/static/strands.png">
+    <title>
+      Play
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="/static/messages.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/static/authentication.css" type="text/css" media="all">
+    
+    <link rel="stylesheet" href="/static/links.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/static/play.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/static/ads.css" type="text/css" media="all">
+    <script src="/static/canvas_util.js"></script>
+    <script src="/static/play_events.js"></script>
+    <script src="/static/play_generate_table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand d-flex align-items-center" href="/" style="margin-right: 0px;">
+        <span style="margin-right: 8px;">Custom Strands</span> 
+        <img src="/static/strands.png" alt="Brand Image" style="height: 36px; margin-right: 7px; border-right: 1px solid #ccc; padding-right: 10px;">
+      </a>
+      
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="nav-button">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="/about" style="color: black;">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/archive" style="color: black;">Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/play_random" style="color: black; margin-right: 8px">Play</a>
+            </li>
+              <li class="nav-item">
+                  <a class="btn btn-secondary" href="/create">Create</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+              
+                  <li class="nav-item">
+                      <a href="/signup/" class="nav-link">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/login/" class="nav-link">Log In</a>
+                  </li>
+              
+              
+          </ul>
+      </div>
+  </nav>
+    
+    <div class="container">
+
+<span id="spangram" hidden>inception</span>
+<span id="spangramloc" hidden>6|7|13|14|15|8|9|16|17</span>
+<span id="words" hidden>aboutime|goodwillhunting|sherlock|marcella</span>
+<span id="loc" hidden>5|11|10|4|3|2|1|0|31|32|27|34|33|39|38|37|36|42|43|44|45|40|46|47|41|35|28|29|23|22|21|20|26|19|25|30|24|18|12</span>
+<span id="url" hidden>Forrosatake-Sourcesofmansplaining</span>
+<input type="hidden" name="csrfmiddlewaretoken" value="LmCn5dThBJGyebHWORVHGjIP2Y5BOTnzgz01xZGkm834sYQYXBcHNpllhXGMSWQF">
+
+<div class="centered text-center">
+    <h1 style="margin-bottom:0;">For rosa take 3</h1>
+    <div>Author: <em><a href="/profile/Anonymous">Anonymous</a></em> | Completions: 0<em></em></div>
+    
+    <div class="theme-card">
+        <span class="theme-title">THEME</span>
+        <div class="theme-content" id="theme">Sources of mansplaining...</div>
+    </div>
+</div>
+
+<div class="centered">
+    <table id="table" class="table text-center table-borderless table-sm square-table h4">
+    </table>
+</div>
+
+<canvas id="selectedCanvas"></canvas>
+<canvas id="permanentCanvas"></canvas>
+<canvas id="hoverCanvas"></canvas>
+<canvas id="tempCanvas"></canvas>
+<div class="info-text">
+    <span id="selected" class="h5"></span>
+</div>
+<div class="info-text">
+    Found <span id="currentlyFound"></span>/<span id="totalWords"></span> Words
+</div>
+<div class="centered">
+    <button class="btn btn-success" id="hint-button">Get a Hint</button>
+</div>
+<div hidden class="centered" id="color-switch-div">
+    <div
+        class="form-group custom-control custom-switch"
+        style="margin-bottom: 0px"
+    >
+        <input
+            type="checkbox"
+            class="custom-control-input"
+            id="color_switch"
+            name="color"
+        />
+    <label class="custom-control-label" for="color_switch">Multicolor Mode</label>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-sm-12 text-center">
+        <button class="btn btn-success" id="share-button" hidden>Share your results!</button>
+        <a class="btn btn-primary" id="play-next" href="/play_random" hidden>Play another game!</a>
+    </div>
+</div>
+
+
+
+<div class="ad left-play-ad">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4087761493614697"
+     crossorigin="anonymous"></script>
+    <!-- Left Play Ad -->
+    <ins class="adsbygoogle"
+        style="display:inline-block;width:160px;height:600px"
+        data-ad-client="ca-pub-4087761493614697"
+        data-ad-slot="4744000412"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="ad right-play-ad"?>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4087761493614697"
+     crossorigin="anonymous"></script>
+    <!-- Right Play Ad -->
+    <ins class="adsbygoogle"
+        style="display:inline-block;width:160px;height:600px"
+        data-ad-client="ca-pub-4087761493614697"
+        data-ad-slot="3896024428"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+
+
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" ></script>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-9">
+          
+          <p class="text-center"><em>Hate the inline ads? <a href=/signup/>Create a free account</a></em></p>
+          
+          <p class="text-center"><em>Find a bug / Have any feedback / Business Inquiries? Email it to customstrandsnyt@gmail.com</em></p>
+          <p class="text-center"><em>Please consider <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZDSFTY4W8MTCA" target="_blank">donating</a> to help cover the $15/month server costs :)</em></p>
+        </div>
+        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4087761493614697"
+        crossorigin="anonymous"></script>
+        <!-- Bottom Resp -->
+        <ins class="adsbygoogle"
+            style="display:block;min-width:400px;max-width:970px;width:100%;height:90px;"
+            data-ad-client="ca-pub-4087761493614697"
+            data-ad-slot="4785029298"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        
+      </div>
+    </div>
+
+  </body>
+</html>
