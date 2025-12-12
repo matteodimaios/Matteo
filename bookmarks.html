@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bookmarks</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f1f3f4;
+      margin: 0;
+      padding: 24px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: #202124;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .bookmark {
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px 14px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #202124;
+    }
+    .bookmark:hover {
+      background: #f8f9fa;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #e8eaed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: #5f6368;
+      flex-shrink: 0;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+    }
+    .title {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .url {
+      font-size: 12px;
+      color: #5f6368;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bookmarks</h1>
+    <div class="grid">
+
+      <a class="bookmark" href="https://thebrowser.com/members/" target="_blank">
+        <div class="icon">B</div>
+        <div class="text">
+          <div class="title">The Browser</div>
+          <div class="url">thebrowser.com</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://www.aldaily.com/" target="_blank">
+        <div class="icon">A</div>
+        <div class="text">
+          <div class="title">Arts & Letters Daily</div>
+          <div class="url">aldaily.com</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://go.openathens.net/redirector/auckland.ac.nz?url=https%3A%2F%2Fwww.nybooks.com%2Fissues%2F" target="_blank">
+        <div class="icon">N</div>
+        <div class="text">
+          <div class="title">New York Review of Books</div>
+          <div class="url">nybooks.com</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://www.datasecretslox.com/" target="_blank">
+        <div class="icon">D</div>
+        <div class="text">
+          <div class="title">Data Secrets Lox</div>
+          <div class="url">datasecretslox.com</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://litfl.com/" target="_blank">
+        <div class="icon">L</div>
+        <div class="text">
+          <div class="title">LITFL</div>
+          <div class="url">litfl.com</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://www.economist.com/" target="_blank">
+        <div class="icon">E</div>
+        <div class="text">
+          <div class="title">The Economist</div>
+          <div class="url">economist.com</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://auckland.primo.exlibrisgroup.com/view/action/uresolver.do" target="_blank">
+        <div class="icon">N</div>
+        <div class="text">
+          <div class="title">NEJM (via Auckland)</div>
+          <div class="url">nejm.org</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://ground.news/" target="_blank">
+        <div class="icon">G</div>
+        <div class="text">
+          <div class="title">Ground News</div>
+          <div class="url">ground.news</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://www.clozemaster.com/lita-eng" target="_blank">
+        <div class="icon">C</div>
+        <div class="text">
+          <div class="title">Clozemaster</div>
+          <div class="url">clozemaster.com</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://www.thetimes.com/puzzles" target="_blank">
+        <div class="icon">T</div>
+        <div class="text">
+          <div class="title">The Times Puzzles</div>
+          <div class="url">thetimes.com</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://www.bellingcat.com/" target="_blank">
+        <div class="icon">B</div>
+        <div class="text">
+          <div class="title">Bellingcat</div>
+          <div class="url">bellingcat.com</div>
+        </div>
+      </a>
+
+      <a class="bookmark" href="https://wiki.auckland.ac.nz/pages/viewpage.action?pageId=49022594" target="_blank">
+        <div class="icon">M</div>
+        <div class="text">
+          <div class="title">MBChB Wiki</div>
+          <div class="url">wiki.auckland.ac.nz</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
